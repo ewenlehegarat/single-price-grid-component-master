@@ -15,70 +15,82 @@ body{
     background-color: hsl(204, 43%, 93%);
 }
 
-#container{
+main{
     border-radius: 5px;
 }
 
-#join{
+.join{
     background-color: white;
     border-radius: 5px 5px 0 0;
     width: 600px;
-    height: 200px;
     padding: 37px;
+    h2{
+        color: hsl(179, 62%, 43%);
+        font-size: 22.5px;
+    }   
+    h3{
+        color: hsl(71, 73%, 54%);
+        font-size: 16.5px;
+        margin-top: 23.5px;
+        margin-bottom: 15px;
+    }
+    p{
+        opacity: 30%;
+        font-size: 15.5px;
+        margin-top: 6px;
+    }
 }
 
-#join h2{
-    color: hsl(179, 62%, 43%);
-    font-size: 22.5px;
-}
-
-#join h3{
-    color: hsl(71, 73%, 54%);
-    font-size: 16.5px;
-    margin-top: 23.5px;
-    margin-bottom: 15px;
-}
-
-#join p{
-    opacity: 30%;
-    font-size: 15.5px;
-    margin-top: 6px;
-}
-
-#bas_de_page{
+.bas_de_page{
     display: flex;
 }
 
-#monthly{
+.monthly{
     background-color: hsl(179, 62%, 43%);
     color: white;
     border-radius: 0 0 0 5px;
     width: 300px;
     height: 250px;
     padding: 41px 40px;
+    h2{
+        font-size: 17px;
+        opacity: 90%;
+    }
+
+    h3{
+        font-size: 30px;
+        margin-top: 15px;
+    }
+
+    h4{
+        font-size: 14.5px;
+        font-weight: normal;
+        opacity: 75%;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
 }
 
-#why{
+.why{
     background-color: #4abebd;
     color: white;
     border-radius: 0 0 5px 0;
     width: 300px;
     height: 250px;
     padding: 38px;
+    h2{
+        margin-top: 6px;
+        font-size: 16.5px;
+        opacity: 85%;
+        margin-bottom: 19px;
+    }
+    p{
+        opacity: 75%;
+        font-size: 13px;
+        margin-top: 4px;
+    }
 }
 
-#why h2{
-    margin-top: 6px;
-    font-size: 16.5px;
-    opacity: 85%;
-    margin-bottom: 19px;
-}
-
-#why p{
-    opacity: 75%;
-    font-size: 13px;
-    margin-top: 4px;
-}
 
 span{
     opacity: 25%;
@@ -97,20 +109,29 @@ button{
     cursor: pointer;
 }
 
-#monthly h2{
-    font-size: 17px;
-    opacity: 90%;
-}
-
-#monthly h3{
-    font-size: 30px;
-    margin-top: 15px;
-}
-
-#monthly h4{
-    font-size: 14.5px;
-    font-weight: normal;
-    opacity: 75%;
-    margin-top: 10px;
-    margin-bottom: 30px;
+@media screen and (max-width: 650px){
+    main{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .bas_de_page{
+        flex-direction: column;
+        width: 80%;
+    }
+    .join{
+        width: 80%;
+        padding: 50px;
+    }
+    .monthly{
+        width: 100%;
+        border-radius: 0;
+    }
+    .why{
+        width: 100%;
+        border-radius: 0 0 5px 5px;
+    }
+    button{
+        width: 100%;
+    }
 }
