@@ -24,11 +24,11 @@ main{
     border-radius: 5px 5px 0 0;
     width: 600px;
     padding: 37px;
-    h2{
+    h1{
         color: hsl(179, 62%, 43%);
         font-size: 22.5px;
     }   
-    h3{
+    h2{
         color: hsl(71, 73%, 54%);
         font-size: 16.5px;
         margin-top: 23.5px;
